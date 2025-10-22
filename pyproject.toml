@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "msc-2s2025-ssrl"
+version = "0.1.0"
+description = ""
+authors = ["zeneto <josealmeidaneto2002@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ipykernel = "^7.0.1"
+pandas = "^2.3.3"
+bs4 = "^0.0.2"
+transformers = "^4.57.1"
+datasets = "^4.2.0"
+accelerate = "^1.11.0"
+bitsandbytes = "^0.48.1"
+peft = "^0.17.1"
+torch = "2.3.0"
+pytorch-lightning = "2.4.0"
+numpy = "1.26.4"
+matplotlib = "^3.10.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

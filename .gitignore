@@ -1,0 +1,97 @@
+# =======================================
+# Python
+# =======================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+.env
+.venv
+venv/
+env/
+
+# =======================================
+# Jupyter
+# =======================================
+.ipynb_checkpoints/
+*.ipynb_save
+
+# =======================================
+# Poetry
+# =======================================
+poetry.lock
+
+# =======================================
+# Datasets & Caches
+# =======================================
+# Ignore large raw Zenodo dumps
+data/zenodo_wikipedia-pt/media_resource.tab
+data/zenodo_wikipedia-pt/*.xml
+data/zenodo_wikipedia-pt/*.tab
+
+# Ignore dataset cache shards
+data/**/data-*.arrow
+data/**/cache-*.arrow
+
+# Keep minimal dataset representation
+!data/**/data-*.arrow.gz
+!data/**/dataset_info.json
+!data/**/state.json
+
+# Optionally ignore entire data folder except metadata files
+# (uncomment if you want to ignore all data)
+# data/
+
+# =======================================
+# Model files (large binaries)
+# =======================================
+models/**/*.safetensors
+models/**/*.gguf
+models/**/tokenizer.json
+models/**/tokenizer.model
+models/**/config.json
+models/**/generation_config.json
+models/**/special_tokens_map.json
+models/**/tokenizer_config.json
+models/**/model.safetensors.index.json
+
+# Keep README or .gitattributes if you want structure visible
+!models/**/README.md
+!models/**/.gitattributes
+
+# =======================================
+# Training checkpoints and outputs
+# =======================================
+results/**/checkpoint-*/
+results/**/*.pt
+results/**/*.pth
+results/**/*.bin
+results/**/*.json
+results/**/*.jinja
+results/**/*.safetensors
+
+# Keep high-level experiment directories
+!results/
+!results/**/README.md
+
+# =======================================
+# OS & Editor Junk
+# =======================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# =======================================
+# Logs
+# =======================================
+logs/
+*.log
+*.out
+*.err
