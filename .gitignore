@@ -28,23 +28,26 @@ poetry.lock
 # =======================================
 # Datasets & Caches
 # =======================================
-# Ignore large raw Zenodo dumps
-data/zenodo_wikipedia-pt/media_resource.tab
-data/zenodo_wikipedia-pt/*.xml
-data/zenodo_wikipedia-pt/*.tab
+old/
 
-# Ignore dataset cache shards
-data/**/data-*.arrow
-data/**/cache-*.arrow
+# Dataset extracts
+data/wikipedia-pt/
+data/MMMLU/
+data/wiki_titles_emb.pt
 
-# Keep minimal dataset representation
-!data/**/data-*.arrow.gz
-!data/**/dataset_info.json
-!data/**/state.json
+# Ignore raw Zenodo files
+demo/zenodo_wikipedia-pt/media_resource.tab
+demo/zenodo_wikipedia-pt/*.xml
+demo/zenodo_wikipedia-pt/*.tab
 
-# Optionally ignore entire data folder except metadata files
-# (uncomment if you want to ignore all data)
-# data/
+# Ignore HuggingFace dataset arrow shards
+demo/**/data-*.arrow
+demo/**/cache-*.arrow
+
+# Do NOT ignore the gzipped minimal dataset representation
+!demo/**/data-*.arrow.gz
+!demo/**/dataset_info.json
+!demo/**/state.json
 
 # =======================================
 # Model files (large binaries)
@@ -58,13 +61,36 @@ models/**/generation_config.json
 models/**/special_tokens_map.json
 models/**/tokenizer_config.json
 models/**/model.safetensors.index.json
+models/**/optimizer.pt
+models/**/scheduler.pt
+models/**/rng_state.pth
+models/**/scaler.pt
+models/**/training_args.bin
+models/**/trainer_state.json
+models/**/adapter_model.safetensors
 
-# Keep README or .gitattributes if you want structure visible
+# Keep documentation & structure
 !models/**/README.md
 !models/**/.gitattributes
 
 # =======================================
-# Training checkpoints and outputs
+# Demo LoRA checkpoints (mirror models structure)
+# =======================================
+demo/**/checkpoint-*/
+demo/**/optimizer.pt
+demo/**/scheduler.pt
+demo/**/rng_state.pth
+demo/**/scaler.pt
+demo/**/training_args.bin
+demo/**/trainer_state.json
+demo/**/adapter_model.safetensors
+
+# Keep metadata files
+!demo/**/README.md
+!demo/**/.gitattributes
+
+# =======================================
+# Training outputs & results
 # =======================================
 results/**/checkpoint-*/
 results/**/*.pt
@@ -74,12 +100,13 @@ results/**/*.json
 results/**/*.jinja
 results/**/*.safetensors
 
-# Keep high-level experiment directories
+# Keep final CSVs and structure
 !results/
+!results/*.csv
 !results/**/README.md
 
 # =======================================
-# OS & Editor Junk
+# OS / Editor Junk
 # =======================================
 .DS_Store
 Thumbs.db
@@ -92,6 +119,6 @@ Thumbs.db
 # Logs
 # =======================================
 logs/
-*.log
+# *.log
 *.out
 *.err
