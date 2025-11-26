@@ -33,6 +33,8 @@ old/
 # Dataset extracts
 data/wikipedia-pt/
 data/MMMLU/
+data/wiki_final.csv
+data/wiki_keyword.csv
 data/wiki_titles_emb.pt
 
 # Ignore raw Zenodo files

@@ -1,0 +1,163 @@
+2025-11-25 04:16:41.833 | INFO     | __main__:run:435 - 
+==================================================
+EVALUATION (models_gemma-3-1b-it)
+==================================================
+2025-11-25 04:16:41.834 | INFO     | __main__:load_model:129 - Device: cuda
+2025-11-25 04:16:41.834 | INFO     | __main__:load_model:130 - Loading model: models/gemma-3-1b-it
+2025-11-25 04:16:44.174 | INFO     | __main__:load_model:139 - Model loaded successfully
+2025-11-25 04:16:44.174 | INFO     | __main__:evaluate:323 - Loading test data from: data/mmlu_test.csv
+2025-11-25 04:16:44.183 | INFO     | __main__:evaluate:333 - Evaluating on 1038 questions...
+2025-11-25 04:28:38.244 | INFO     | __main__:save_results:379 - Results saved to: results/models_gemma-3-1b-it_results.csv
+2025-11-25 04:28:38.248 | INFO     | __main__:print_metrics:422 - 
+==================================================
+RESULTS (with_chat_long_answer)
+==================================================
+2025-11-25 04:28:38.249 | INFO     | __main__:print_metrics:423 - Accuracy: 30.64% (318/1038)
+2025-11-25 04:28:38.249 | INFO     | __main__:print_metrics:425 - Empty answers: 0
+2025-11-25 04:28:38.249 | INFO     | __main__:print_metrics:426 - Distribution: {'C': 633, 'A': 200, 'B': 110, 'D': 95}
+2025-11-25 04:28:38.249 | INFO     | __main__:print_metrics:422 - 
+==================================================
+RESULTS (with_chat_short_answer)
+==================================================
+2025-11-25 04:28:38.249 | INFO     | __main__:print_metrics:423 - Accuracy: 30.64% (318/1038)
+2025-11-25 04:28:38.249 | INFO     | __main__:print_metrics:425 - Empty answers: 0
+2025-11-25 04:28:38.249 | INFO     | __main__:print_metrics:426 - Distribution: {'C': 636, 'A': 197, 'B': 109, 'D': 93, 'The': 3}
+2025-11-25 04:28:38.249 | INFO     | __main__:print_metrics:422 - 
+==================================================
+RESULTS (seqlogprob)
+==================================================
+2025-11-25 04:28:38.249 | INFO     | __main__:print_metrics:423 - Accuracy: 30.35% (315/1038)
+2025-11-25 04:28:38.249 | INFO     | __main__:print_metrics:425 - Empty answers: 0
+2025-11-25 04:28:38.250 | INFO     | __main__:print_metrics:426 - Distribution: {'C': 603, 'A': 200, 'B': 141, 'D': 94}
+2025-11-25 04:28:38.312 | INFO     | __main__:run:435 - 
+==================================================
+EVALUATION (gemma-3-1b-pt-sft105_best_eval)
+==================================================
+2025-11-25 04:28:38.312 | INFO     | __main__:load_model_lora:143 - Device: cuda
+2025-11-25 04:28:38.312 | INFO     | __main__:load_model_lora:144 - Loading BASE MODEL + LORA ADAPTER
+2025-11-25 04:28:38.312 | INFO     | __main__:load_model_lora:147 - Base model: models/gemma-3-1b-pt
+2025-11-25 04:28:38.892 | INFO     | __main__:load_model_lora:156 - Loading LoRA adapter: old/models/gemma-3-1b-pt-sft105/best_eval
+2025-11-25 04:28:43.528 | INFO     | __main__:load_model_lora:171 - Model + LoRA loaded successfully on cuda
+2025-11-25 04:28:43.528 | INFO     | __main__:evaluate:323 - Loading test data from: data/mmlu_test.csv
+2025-11-25 04:28:43.537 | INFO     | __main__:evaluate:333 - Evaluating on 1038 questions...
+2025-11-25 05:35:18.616 | INFO     | __main__:save_results:379 - Results saved to: results/gemma-3-1b-pt-sft105_best_eval_results.csv
+2025-11-25 05:35:18.619 | INFO     | __main__:print_metrics:422 - 
+==================================================
+RESULTS (with_chat_long_answer)
+==================================================
+2025-11-25 05:35:18.619 | INFO     | __main__:print_metrics:423 - Accuracy: 24.95% (259/1038)
+2025-11-25 05:35:18.620 | INFO     | __main__:print_metrics:425 - Empty answers: 0
+2025-11-25 05:35:18.620 | INFO     | __main__:print_metrics:426 - Distribution: {'C': 301, 'B': 258, 'A': 246, 'D': 233}
+2025-11-25 05:35:18.620 | INFO     | __main__:print_metrics:422 - 
+==================================================
+RESULTS (with_chat_short_answer)
+==================================================
+2025-11-25 05:35:18.620 | INFO     | __main__:print_metrics:423 - Accuracy: 27.94% (290/1038)
+2025-11-25 05:35:18.620 | INFO     | __main__:print_metrics:425 - Empty answers: 0
+2025-11-25 05:35:18.620 | INFO     | __main__:print_metrics:426 - Distribution: {'C': 435, 'A': 277, 'D': 207, 'B': 116, 'Você': 3}
+2025-11-25 05:35:18.621 | INFO     | __main__:print_metrics:422 - 
+==================================================
+RESULTS (seqlogprob)
+==================================================
+2025-11-25 05:35:18.621 | INFO     | __main__:print_metrics:423 - Accuracy: 25.63% (266/1038)
+2025-11-25 05:35:18.621 | INFO     | __main__:print_metrics:425 - Empty answers: 0
+2025-11-25 05:35:18.621 | INFO     | __main__:print_metrics:426 - Distribution: {'C': 342, 'B': 248, 'A': 230, 'D': 218}
+2025-11-25 05:35:18.691 | INFO     | __main__:run:435 - 
+==================================================
+EVALUATION (gemma-3-1b-pt-sft106_best_eval)
+==================================================
+2025-11-25 05:35:18.691 | INFO     | __main__:load_model_lora:143 - Device: cuda
+2025-11-25 05:35:18.691 | INFO     | __main__:load_model_lora:144 - Loading BASE MODEL + LORA ADAPTER
+2025-11-25 05:35:18.691 | INFO     | __main__:load_model_lora:147 - Base model: models/gemma-3-1b-pt
+2025-11-25 05:35:19.379 | INFO     | __main__:load_model_lora:156 - Loading LoRA adapter: old/models/gemma-3-1b-pt-sft106/best_eval
+2025-11-25 05:35:20.950 | INFO     | __main__:load_model_lora:171 - Model + LoRA loaded successfully on cuda
+2025-11-25 05:35:20.951 | INFO     | __main__:evaluate:323 - Loading test data from: data/mmlu_test.csv
+2025-11-25 05:35:20.959 | INFO     | __main__:evaluate:333 - Evaluating on 1038 questions...
+2025-11-25 06:53:54.703 | INFO     | __main__:save_results:379 - Results saved to: results/gemma-3-1b-pt-sft106_best_eval_results.csv
+2025-11-25 06:53:54.706 | INFO     | __main__:print_metrics:422 - 
+==================================================
+RESULTS (with_chat_long_answer)
+==================================================
+2025-11-25 06:53:54.706 | INFO     | __main__:print_metrics:423 - Accuracy: 24.37% (253/1038)
+2025-11-25 06:53:54.706 | INFO     | __main__:print_metrics:425 - Empty answers: 0
+2025-11-25 06:53:54.706 | INFO     | __main__:print_metrics:426 - Distribution: {'C': 302, 'B': 288, 'A': 237, 'D': 211}
+2025-11-25 06:53:54.706 | INFO     | __main__:print_metrics:422 - 
+==================================================
+RESULTS (with_chat_short_answer)
+==================================================
+2025-11-25 06:53:54.706 | INFO     | __main__:print_metrics:423 - Accuracy: 26.01% (270/1038)
+2025-11-25 06:53:54.707 | INFO     | __main__:print_metrics:425 - Empty answers: 0
+2025-11-25 06:53:54.707 | INFO     | __main__:print_metrics:426 - Distribution: {'C': 695, 'A': 200, 'B': 143}
+2025-11-25 06:53:54.707 | INFO     | __main__:print_metrics:422 - 
+==================================================
+RESULTS (seqlogprob)
+==================================================
+2025-11-25 06:53:54.707 | INFO     | __main__:print_metrics:423 - Accuracy: 23.70% (246/1038)
+2025-11-25 06:53:54.707 | INFO     | __main__:print_metrics:425 - Empty answers: 0
+2025-11-25 06:53:54.707 | INFO     | __main__:print_metrics:426 - Distribution: {'B': 623, 'C': 261, 'A': 153, 'D': 1}
+2025-11-25 06:53:54.755 | INFO     | __main__:run:435 - 
+==================================================
+EVALUATION (gemma-3-1b-pt-sft107_best_eval)
+==================================================
+2025-11-25 06:53:54.755 | INFO     | __main__:load_model_lora:143 - Device: cuda
+2025-11-25 06:53:54.755 | INFO     | __main__:load_model_lora:144 - Loading BASE MODEL + LORA ADAPTER
+2025-11-25 06:53:54.755 | INFO     | __main__:load_model_lora:147 - Base model: models/gemma-3-1b-pt
+2025-11-25 06:53:55.686 | INFO     | __main__:load_model_lora:156 - Loading LoRA adapter: models/gemma-3-1b-pt-sft107/best_eval
+2025-11-25 06:53:57.240 | INFO     | __main__:load_model_lora:171 - Model + LoRA loaded successfully on cuda
+2025-11-25 06:53:57.240 | INFO     | __main__:evaluate:323 - Loading test data from: data/mmlu_test.csv
+2025-11-25 06:53:57.252 | INFO     | __main__:evaluate:333 - Evaluating on 1038 questions...
+2025-11-25 08:12:24.202 | INFO     | __main__:save_results:379 - Results saved to: results/gemma-3-1b-pt-sft107_best_eval_results.csv
+2025-11-25 08:12:24.205 | INFO     | __main__:print_metrics:422 - 
+==================================================
+RESULTS (with_chat_long_answer)
+==================================================
+2025-11-25 08:12:24.206 | INFO     | __main__:print_metrics:423 - Accuracy: 25.14% (261/1038)
+2025-11-25 08:12:24.206 | INFO     | __main__:print_metrics:425 - Empty answers: 0
+2025-11-25 08:12:24.206 | INFO     | __main__:print_metrics:426 - Distribution: {'C': 298, 'B': 263, 'A': 252, 'D': 225}
+2025-11-25 08:12:24.206 | INFO     | __main__:print_metrics:422 - 
+==================================================
+RESULTS (with_chat_short_answer)
+==================================================
+2025-11-25 08:12:24.206 | INFO     | __main__:print_metrics:423 - Accuracy: 25.63% (266/1038)
+2025-11-25 08:12:24.206 | INFO     | __main__:print_metrics:425 - Empty answers: 0
+2025-11-25 08:12:24.206 | INFO     | __main__:print_metrics:426 - Distribution: {'C': 397, 'A': 340, 'D': 231, 'B': 69, 'Você': 1}
+2025-11-25 08:12:24.206 | INFO     | __main__:print_metrics:422 - 
+==================================================
+RESULTS (seqlogprob)
+==================================================
+2025-11-25 08:12:24.207 | INFO     | __main__:print_metrics:423 - Accuracy: 22.35% (232/1038)
+2025-11-25 08:12:24.207 | INFO     | __main__:print_metrics:425 - Empty answers: 0
+2025-11-25 08:12:24.207 | INFO     | __main__:print_metrics:426 - Distribution: {'A': 454, 'B': 298, 'D': 263, 'C': 23}
+2025-11-25 08:12:24.251 | INFO     | __main__:run:435 - 
+==================================================
+EVALUATION (gemma-3-1b-pt-contextual-e1-ckpt1600-sft115_best_eval)
+==================================================
+2025-11-25 08:12:24.252 | INFO     | __main__:load_model_lora:143 - Device: cuda
+2025-11-25 08:12:24.252 | INFO     | __main__:load_model_lora:144 - Loading BASE MODEL + LORA ADAPTER
+2025-11-25 08:12:24.252 | INFO     | __main__:load_model_lora:147 - Base model: models/gemma-3-1b-pt
+2025-11-25 08:12:24.930 | INFO     | __main__:load_model_lora:156 - Loading LoRA adapter: models/gemma-3-1b-pt-contextual-e1-ckpt1600-sft115/best_eval
+2025-11-25 08:12:26.649 | INFO     | __main__:load_model_lora:171 - Model + LoRA loaded successfully on cuda
+2025-11-25 08:12:26.649 | INFO     | __main__:evaluate:323 - Loading test data from: data/mmlu_test.csv
+2025-11-25 08:12:26.659 | INFO     | __main__:evaluate:333 - Evaluating on 1038 questions...
+2025-11-25 09:30:42.335 | INFO     | __main__:save_results:379 - Results saved to: results/gemma-3-1b-pt-contextual-e1-ckpt1600-sft115_best_eval_results.csv
+2025-11-25 09:30:42.338 | INFO     | __main__:print_metrics:422 - 
+==================================================
+RESULTS (with_chat_long_answer)
+==================================================
+2025-11-25 09:30:42.339 | INFO     | __main__:print_metrics:423 - Accuracy: 26.30% (273/1038)
+2025-11-25 09:30:42.339 | INFO     | __main__:print_metrics:425 - Empty answers: 0
+2025-11-25 09:30:42.339 | INFO     | __main__:print_metrics:426 - Distribution: {'B': 327, 'D': 288, 'C': 264, 'A': 159}
+2025-11-25 09:30:42.339 | INFO     | __main__:print_metrics:422 - 
+==================================================
+RESULTS (with_chat_short_answer)
+==================================================
+2025-11-25 09:30:42.339 | INFO     | __main__:print_metrics:423 - Accuracy: 26.01% (270/1038)
+2025-11-25 09:30:42.339 | INFO     | __main__:print_metrics:425 - Empty answers: 0
+2025-11-25 09:30:42.339 | INFO     | __main__:print_metrics:426 - Distribution: {'B': 433, 'D': 322, 'C': 276, 'A': 7}
+2025-11-25 09:30:42.339 | INFO     | __main__:print_metrics:422 - 
+==================================================
+RESULTS (seqlogprob)
+==================================================
+2025-11-25 09:30:42.339 | INFO     | __main__:print_metrics:423 - Accuracy: 25.92% (269/1038)
+2025-11-25 09:30:42.340 | INFO     | __main__:print_metrics:425 - Empty answers: 0
+2025-11-25 09:30:42.340 | INFO     | __main__:print_metrics:426 - Distribution: {'B': 526, 'D': 340, 'C': 165, 'A': 7}
